@@ -1,0 +1,26 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+	<!-- this is our beans -->
+	<context:annotation-config/>
+
+	<!-- <bean class ="com.springcore.lifecycle.Momo" name="b1"
+	 init-method ="init" destroy-method ="destroy" >   this is a xml method for lifecycle process
+		<property name="price" value="100">
+		</property>
+	
+	</bean> -->
+<!-- 	 <bean class="com.springcore.lifecycle.Coke" name="p1" >
+		<property name="price" value="21"/>this is a inteface method 
+	
+	</bean> --> 
+	<bean class="com.springcore.lifecycle.Annot" name="a1" >
+		<property name="name" value=" lifecycle with annotation "/><!-- this is a annotation method  -->
+	
+	</bean>  
+
+</beans>
